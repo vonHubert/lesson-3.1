@@ -13,6 +13,8 @@
 		32C083912942578D008D9EB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C0838F2942578D008D9EB6 /* Main.storyboard */; };
 		32C0839329425792008D9EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C0839229425792008D9EB6 /* Assets.xcassets */; };
 		32C0839629425792008D9EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C0839429425792008D9EB6 /* LaunchScreen.storyboard */; };
+		32C0839E29426361008D9EB6 /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0839D29426361008D9EB6 /* Extension + UIButton.swift */; };
+		32C083A229427A27008D9EB6 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 32C083A129427A27008D9EB6 /* SpringAnimation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		32C0839229425792008D9EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C0839529425792008D9EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C0839729425792008D9EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32C0839D29426361008D9EB6 /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C083A229427A27008D9EB6 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,7 @@
 		32C083882942578D008D9EB6 /* lesson 3.1 */ = {
 			isa = PBXGroup;
 			children = (
+				32C0839D29426361008D9EB6 /* Extension + UIButton.swift */,
 				32C083892942578D008D9EB6 /* AppDelegate.swift */,
 				32C0838B2942578D008D9EB6 /* SceneDelegate.swift */,
 				32C0838D2942578D008D9EB6 /* ViewController.swift */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "lesson 3.1";
+			packageProductDependencies = (
+				32C083A129427A27008D9EB6 /* SpringAnimation */,
+			);
 			productName = "lesson 3.1";
 			productReference = 32C083862942578D008D9EB6 /* lesson 3.1.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 32C0837D2942578C008D9EB6;
+			packageReferences = (
+				32C083A029427A27008D9EB6 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 32C083872942578D008D9EB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 				32C0838E2942578D008D9EB6 /* ViewController.swift in Sources */,
 				32C0838A2942578D008D9EB6 /* AppDelegate.swift in Sources */,
 				32C0838C2942578D008D9EB6 /* SceneDelegate.swift in Sources */,
+				32C0839E29426361008D9EB6 /* Extension + UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +314,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "SS.lesson-3-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "SS.lesson-3-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32C083A029427A27008D9EB6 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32C083A129427A27008D9EB6 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32C083A029427A27008D9EB6 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32C0837E2942578C008D9EB6 /* Project object */;
 }
