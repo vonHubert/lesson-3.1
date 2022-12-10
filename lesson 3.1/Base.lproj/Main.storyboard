@@ -16,34 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUV-eX-M81">
-                                <rect key="frame" x="76" y="122" width="240" height="128"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Core Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bi-vN-QDg">
-                                        <rect key="frame" x="49.666666666666671" y="51.33333333333335" width="141" height="25.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <nil key="textColor"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOB-Xy-iDf" customClass="SpringButton" customModule="SpringAnimation">
+                                <rect key="frame" x="80" y="701.33333333333337" width="233" height="42.333333333333371"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
-                                    <constraint firstItem="0bi-vN-QDg" firstAttribute="centerX" secondItem="YUV-eX-M81" secondAttribute="centerX" id="QOe-HS-T4X"/>
-                                    <constraint firstAttribute="height" constant="128" id="f6t-0y-BVQ"/>
-                                    <constraint firstItem="0bi-vN-QDg" firstAttribute="centerY" secondItem="YUV-eX-M81" secondAttribute="centerY" id="yL1-WL-lhq"/>
+                                    <constraint firstAttribute="width" secondItem="uOB-Xy-iDf" secondAttribute="height" multiplier="11:2" id="I40-9Y-ZrH"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-Qh-KWm">
-                                <rect key="frame" x="76.666666666666686" y="593.33333333333337" width="240" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Start Core Animation">
+                                <state key="normal" title="Start Animation">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -52,103 +33,59 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="startCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLw-Wr-0Lb"/>
+                                    <action selector="startAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ihg-wo-rQA"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjX-RW-szc" customClass="SpringView" customModule="SpringAnimation">
-                                <rect key="frame" x="76" y="351" width="240" height="128"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spring Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgC-Ai-u3b">
-                                        <rect key="frame" x="41.666666666666671" y="51.333333333333314" width="156.66666666666663" height="25.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <nil key="textColor"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                </subviews>
+                                <rect key="frame" x="136.66666666666666" y="153" width="119.99999999999997" height="120"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
-                                    <constraint firstItem="JgC-Ai-u3b" firstAttribute="centerY" secondItem="RjX-RW-szc" secondAttribute="centerY" id="B9N-b3-C3n"/>
-                                    <constraint firstAttribute="height" constant="128" id="Pnm-Bb-6lc"/>
-                                    <constraint firstItem="JgC-Ai-u3b" firstAttribute="centerX" secondItem="RjX-RW-szc" secondAttribute="centerX" id="lJw-Sr-0Bc"/>
+                                    <constraint firstAttribute="height" constant="120" id="QPv-TG-Zls"/>
+                                    <constraint firstAttribute="width" constant="120" id="YWZ-V7-490"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="60"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="morph"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeIn"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOB-Xy-iDf" customClass="SpringButton" customModule="SpringAnimation">
-                                <rect key="frame" x="76.666666666666686" y="687" width="240" height="36"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Start Spring Animation">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeInOut"/>
-                                </userDefinedRuntimeAttributes>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTP-4C-PZL">
+                                <rect key="frame" x="41" y="426" width="317" height="260.33333333333326"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YUV-eX-M81" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="4h3-DY-vbY"/>
-                            <constraint firstItem="YUV-eX-M81" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="5lP-CS-8w1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YUV-eX-M81" secondAttribute="trailing" constant="77" id="A1I-Jv-Ols"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RjX-RW-szc" secondAttribute="trailing" constant="77" id="F9f-Ip-rhH"/>
-                            <constraint firstItem="uOB-Xy-iDf" firstAttribute="height" secondItem="yb1-Qh-KWm" secondAttribute="height" id="JYS-3a-8Np"/>
-                            <constraint firstItem="RjX-RW-szc" firstAttribute="top" secondItem="YUV-eX-M81" secondAttribute="bottom" constant="101" id="KGj-t8-mz2"/>
-                            <constraint firstItem="yb1-Qh-KWm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UNj-l5-1l5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yb1-Qh-KWm" secondAttribute="bottom" multiplier="1.3" id="W8q-V3-MCs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uOB-Xy-iDf" secondAttribute="trailing" constant="80" id="Aer-Vh-EzV"/>
+                            <constraint firstItem="TTP-4C-PZL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HO7-Y9-lmY"/>
+                            <constraint firstAttribute="top" secondItem="RjX-RW-szc" secondAttribute="bottom" constant="-273" id="LDY-J7-ok4"/>
+                            <constraint firstItem="RjX-RW-szc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="UWm-v6-clt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TTP-4C-PZL" secondAttribute="trailing" constant="35" id="Wy9-Se-kxw"/>
                             <constraint firstItem="uOB-Xy-iDf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X6f-8K-UDS"/>
-                            <constraint firstItem="uOB-Xy-iDf" firstAttribute="width" secondItem="yb1-Qh-KWm" secondAttribute="width" id="fRR-fR-gIL"/>
-                            <constraint firstItem="RjX-RW-szc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="hal-w7-RLX"/>
-                            <constraint firstItem="uOB-Xy-iDf" firstAttribute="top" secondItem="yb1-Qh-KWm" secondAttribute="bottom" constant="57.670000000000002" id="rLl-qJ-QnH"/>
-                            <constraint firstItem="yb1-Qh-KWm" firstAttribute="width" secondItem="YUV-eX-M81" secondAttribute="width" id="zyK-0A-91u"/>
+                            <constraint firstItem="uOB-Xy-iDf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="XaY-V3-ja0"/>
+                            <constraint firstItem="TTP-4C-PZL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="ZCo-9b-d6n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uOB-Xy-iDf" secondAttribute="bottom" multiplier="1.1" id="gvq-X2-dAY"/>
+                            <constraint firstItem="RjX-RW-szc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jTH-A2-Bc9"/>
+                            <constraint firstItem="uOB-Xy-iDf" firstAttribute="top" secondItem="TTP-4C-PZL" secondAttribute="bottom" constant="15" id="nAR-sm-0Dc"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="coreAnimationView" destination="YUV-eX-M81" id="YAI-A1-4oY"/>
-                        <outlet property="springAnimationView" destination="RjX-RW-szc" id="gDE-bB-fgS"/>
+                        <outlet property="AnimationView" destination="RjX-RW-szc" id="gDE-bB-fgS"/>
+                        <outlet property="currentAnimationDescriptionLabel" destination="TTP-4C-PZL" id="YQY-bj-ld0"/>
+                        <outlet property="startAnimationButton" destination="uOB-Xy-iDf" id="rqI-G5-gwF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-178" y="-27"/>
+            <point key="canvasLocation" x="-179.38931297709922" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
